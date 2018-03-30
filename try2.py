@@ -15,7 +15,7 @@ class myThread(threading.Thread):
         print_time(self.name, self.counter, 5)
         print "Exiting " + self.name
 
-def print_name(threadName, delay, counter):
+def print_time(threadName, delay, counter):
     while counter:
         if exitFlag:
             (threading.Thread).exit()
