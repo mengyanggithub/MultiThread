@@ -6,7 +6,7 @@ def print_time(threadName, delay):
     while count < 5:
         time.sleep(delay)
         count += 1
-        print "%s: %s" % (threadName, time.ctime(time.time()))
+        print "%s: %s" % (threadName, time.ctime(time.time()), count)
 
 try:
     thread.start_new_thread(print_time, ("Thread-1", 2, ))
